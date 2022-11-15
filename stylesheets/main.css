@@ -1,0 +1,59 @@
+/* 
+  This styles the body of the web page to have a background color of #ffffff,
+  which is white, using the background-color CSS property
+  and a font color of #656466 using the color CSS property.
+*/
+body {
+  background-color: #ffffff;
+  color: #656466;
+}
+
+/* 
+  The nav li will have inline-block, with a margin of 10px and font size of 20px
+*/
+nav li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+}
+
+/*
+  The navigation link will display with a margin of 4px, padding of 5px, background colour 
+  of #f5f5f5 and text colour of #252422
+*/
+.nav-link {
+  margin: 4px;
+  padding: 5px;
+
+  background-color: #f5f5f5;
+  color: #252422;
+}
+
+/*
+  This styles all h1 tags to be center aligned and have a font size of 50 px.
+*/
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* This styles all p tags to have a font size of 24 px. */
+p {
+  font-size: 24px;
+  color: #252422;
+}
+
+/*
+  Paragraphs will be in the specified fonts.
+*/
+#styled-by-id {
+  font-family: Georgia, "Times New Roman", Cambria, serif;
+}
+
+/*
+  h2 headings will be displayed with a font size of 25px and colour #656466.
+*/
+h2 {
+  font-size: 25px;
+  color: #656466;
+}

@@ -1,0 +1,205 @@
+<!--
+  Name: Oluwabukunmi Leke-Atere
+  Course: Software Development 20S
+  Teacher: Scott Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: November 14th, 2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty 1</title>
+    <!--This will link tthe external stylesheet.-->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!-- 
+      An Internal stylesheet for div, span, and links to sources.
+    -->
+    <style>
+      /*
+        This will display a border around specific images with the class name of treaty-map.
+        The border will be 5px with a solid colour of #c96f29
+      */
+      .treaty-map {
+        border: 5px solid #c96f29;
+        margin-left: 50px;
+      }
+
+      /*
+        This styles all divs on the web page to have a background color
+        of #f5f5f5, sets the div to use the automatic width of the
+        div, and sets the height to 200px. Adds 10px of padding to the
+        top and bottom of the div, as well as 20px of padding on the left
+        and right. Finally, aligns the text center.
+      */
+      div {
+        background-color: #f5f5f5;
+        width: auto;
+        height: 200px;
+
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      /*
+        This styles all spans on the web page to bold the text inside
+        the span and change the text to be colour #c96f29.
+      */
+      span {
+        font-weight: bold;
+        color: #c96f29;
+      }
+
+      /*
+        The element with the sources-links id will not have a list style.
+      */
+      #sources-links {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The header of the webpage will contain the link to this webpage. 
+        More links will be added as the assignment progresses.
+    -->
+    <header>
+      <!-- The links will be displayed consistently throughout the website
+         because a class (nav-link) has been incorporated into the external stylesheet.-->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Treaty 1</h1>
+
+      <!--Will act as a container for the written definitions of a treaty on the webpage.-->
+      <div>
+        <p>
+          A treaty is an agreement between the Canadian government, indigenous
+          communities, provinces, and territories.
+        </p>
+        <p>
+          Treaties outline each group's continued treaty rights and benefits and
+          set forth the parties' ongoing rights and obligations.
+        </p>
+        <p>In other words, a treaty is an understanding between nations.</p>
+      </div>
+      <br />
+
+      <!-- The atrributes of the class treaty-map will be added to the iimage. 
+        The width takes up 90% space and has a height of 450px.-->
+      <img
+        class="treaty-map"
+        src="images/treaty-map.gif"
+        width="90%"
+        height="450px"
+        alt="A map of Canada. The background is white, the map is sectioned into 
+        treaties. Treaty 11 is coloured in peach around parts of Yukon and Northwest
+        Territories, in black and bold writing it says 11 and 1921. Douglas Territories 
+        is indicated in Victoria in the same black and bold writing. On Alberta, parts of 
+        treaty 7, 6, 5, 8, and 4 are shown in black and bold writing. The years 1899, 1877, 
+        1876, 1875, and 1871 are written. Saskatchewan's part of the map treaties 2, 4, 6, 5, and 10. 
+        In Manitoba, treaties 10, 4, 2, 3, 1, and 9 are labeled. In Ontario, there is treaties 3, 10, and 9 
+        labeled. Multiple arrows in black colour are pointing to places on the map. Robinson-Superior 
+        is on the bottom of Ontario, Williams treaties arrow points to Ottawa. Upper Canada Land Surrenders 
+        are labeled to be in parts of Ottawa and bottom Ontario area. Peace and friendship treaties is labeled to 
+        be in New Brunswick, Nova Scotia, and Prince Edward Island.  " />
+
+      <!-- Inline styling for a paragraph that describes the image above.-->
+      <p style="font-size: 17px; text-align: center">
+        <b>
+          Canadian Map that illustrates the Treaties of Canada. Treaty 1 can be
+          seen in the south of Manitoba.</b
+        >
+      </p>
+
+      <br />
+
+      <h2>Background Information</h2>
+      <p>
+        <!-- Spans are added to emphasize and style important words.-->
+        Treaty No. 1 was <span>signed August 3rd, 1871</span>, by
+        representatives of the Crown and indigenous communities. It was
+        negotiated and arranged at <span>Lower Fort Garry</span>. The Treaty 1
+        was made between the First Nations of Long Plain, Sagkeeng, Brokenhead
+        Ojibway, Sandy Bay Ojibway, Swan Lake, Peguis, and Roseau River
+        Anishinaabe.
+      </p>
+      <br />
+
+      <!-- The atrributes of the class treaty-map will be added to the image. 
+        The width takes up 90% space and has a height of 450px.-->
+      <img
+        class="treaty-map"
+        src="images/firstnations-treaty-map.jpg"
+        width="90%"
+        height="500px"
+        alt="Black and white image that uses black text. The picture is a map of Canada.
+        There is a legend on the bottom left corner that aids in understanding. The image shows 
+        Canada being divided into all the respective treaties. Years of the treaty agreements are also
+        displayed. On the top right corner there is a title for the image in black, bolded, and capitalized text
+         that says, CROWN-ABORIGINAL TREATIES IN CANADA 1763-2005. " />
+
+      <!-- Inline styling for a paragraph that describes the image above.-->
+      <p style="font-size: 17px; text-align: center">
+        <b>Detailed map of Canada and its treaties.</b>
+      </p>
+
+      <h2>Relationship between Treaty 1 and other treaties</h2>
+      <p>
+        <!-- Spans are added to emphasize and style important words.-->
+        All the treaties together make up an integral part of Canada's
+        historical and contemporary landscape. A
+        <span>total of 11 numbered treaties</span>
+        were negotiated. The general form and scope of agreements of the
+        treaties are similar, however the circumstances of each treaty signing
+        is unique. The treaties negotiated between 1899 and 1921 are all
+        relatively similar but treaty 1 holds fewer clauses.
+      </p>
+    </main>
+    <!--The foooter will hold the links to where information was found and copyright.-->
+    <footer>
+      <div>
+        <h2>Sources</h2>
+        <ul id="sources-links">
+          <li>
+            <a
+              href="https://trcm.ca/lets-talk-treaties/what-is-a-treaty/"
+              target="blank"
+              >Treaty Realtions Commision of Manitoba What is a Treaty
+              Webpage</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.sac-isc.gc.ca/eng/1100100020576/1616073943706"
+              target="blank"
+              >Government of Canada First Nations and Treaty Areas in Manitoba
+              Webpage</a
+            >
+          </li>
+          <li>
+            <a
+              href="The Numbered Treaties (1871-1921) (rcaanc-cirnac.gc.ca)"
+              target="blank"
+              >Government of Canada Numbered Treaties Webpage</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.winnipegvitalsigns.org/vital-information/treaty-1/"
+              target="blank"
+              >Winnipeg Vital Signs Treaty 1 Webpage</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p>&#169; Oluwabukunmi Leke-Atere</p>
+    </footer>
+  </body>
+</html>
