@@ -39,8 +39,11 @@ html {
 }
 /* 
   This styles the body of the web page to have a background color of #fffefe,
-  which is off-white, using the background-color CSS property
-  and a font color of #575658 using the color CSS property.
+  which is off-white, using the background-color CSS property and a font color
+  of #575658 using the color CSS property. The font size is set to 1.6 times 
+  the size of the root element's font size, and to use the Times New Roman font
+  before using the Times font. If neither font is available, the browser will use the
+  default serif font.
 */
 body {
   background-color: #fffefe;
@@ -76,6 +79,9 @@ nav li {
   color: #252422;
 }
 
+/*
+  Displays the link to change color when it is hovered on, click, or tabbed.
+*/
 nav a:hover,
 nav a:focus {
   background-color: #252422;
