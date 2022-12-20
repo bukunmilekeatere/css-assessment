@@ -1,11 +1,58 @@
+/*
+  My chosen colours:
+  Orange: I specifically chose a darker shade of orange. 
+  I believe orange works for the purpose of this website because 
+  it represents creativity and balance. Balance is one of the 
+  things Indegenous peoples stand for and find important. Creativity
+  is another key factor in Indegenous peoples lives as they express 
+  their culture through creativity. Since Indegenous peoples play a 
+  huge part in treaty 1, it made sense to include the orange.
+  white: I chose a shade of white to incorporate into my webiste 
+  because white represents goodness and humility. These two things
+  are characteristics found common in the Indigenous peoples culture
+  and since this is a website that focus heavily on them, i added the 
+  shade of white as my background.
+  Black: I chose a shade of black to add to my website as the font colour.
+  I chose a shade of black because it is classic and it represents power,
+  the treaty 1, could be seen as power in the sense that it shows to sides 
+  of power coming together (the Crown and First Nations).
+  Red: I chose red to add to my webiste because it fits the purpose of the 
+  website in the sense that it is a color that represents action. The treaty 
+  can be seen as action taken by the Crown and First Nations to have security
+  of land and resources. 
+  Grey: Grey is another color that represents balance, and balance is key in 
+  the Indgenous peoples culture so it made sense to include grey.
+*/
+
+/* This will style all elements to have line spacing of 140% */
+* {
+  line-height: 140%;
+}
+
+/*
+  This will style the html element (also known as the
+  root element) to have a default font-size of 62.5%
+  of the default font size for the browser. (comment from mr. Hardman)
+*/
+html {
+  font-size: 62.5%;
+}
 /* 
-  This styles the body of the web page to have a background color of #ffffff,
-  which is white, using the background-color CSS property
-  and a font color of #656466 using the color CSS property.
+  This styles the body of the web page to have a background color of #fffefe,
+  which is off-white, using the background-color CSS property
+  and a font color of #575658 using the color CSS property.
 */
 body {
-  background-color: #ffffff;
-  color: #656466;
+  background-color: #fffefe;
+  color: #575658;
+
+  font-size: 1.6rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Nav bar of color #8a440f */
+nav {
+  background-color: #8a440f;
 }
 
 /* 
@@ -29,6 +76,12 @@ nav li {
   color: #252422;
 }
 
+nav a:hover,
+nav a:focus {
+  background-color: #252422;
+  color: #f5f5f5;
+}
+
 /*
   This styles all h1 tags to be center aligned and have a font size of 50 px.
 */
@@ -37,23 +90,89 @@ h1 {
   font-size: 50px;
 }
 
-/* This styles all p tags to have a font size of 24 px. */
+/*
+  This styles all sections elements on the web page to have a background color
+  of #f5f5f5, sets the section to use the automatic width of the
+  div, and sets the height to 160px. Adds 10px of padding to the
+  top and bottom of the section, as well as 20px of padding on the left
+  and right. Finally, aligns the text center.
+*/
+section {
+  background-color: #f5f5f5;
+  width: auto;
+  height: 160px;
+
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*
+  This styles all spans on the web page to bold the text inside
+  the span and change the text to be colour #8a440f.
+*/
+span {
+  font-weight: bold;
+  color: #8a440f;
+}
+
+/*
+  This styles all div elements on the web page to have a background color
+  of #f5f5f5, sets the div to use the automatic width of the
+  div, and sets the height to 200px. Adds 10px of padding to the
+  top and bottom of the div, as well as 20px of padding on the left
+  and right. Finally, aligns the text center.
+*/
+div {
+  background-color: #f5f5f5;
+  width: auto;
+  height: 200px;
+
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* This styles all p tags to have a font size of 24 px and color #252422. */
 p {
   font-size: 24px;
   color: #252422;
 }
 
 /*
-  Paragraphs will be in the specified fonts.
-*/
-#styled-by-id {
-  font-family: Georgia, "Times New Roman", Cambria, serif;
-}
-
-/*
-  h2 headings will be displayed with a font size of 25px and colour #656466.
+  h2 headings will be displayed with a font size of 25px and color #656466.
 */
 h2 {
   font-size: 25px;
-  color: #656466;
+  color: #575658;
+}
+
+/* Figure images will display with a width of 50% */
+figure img {
+  width: 50%;
+}
+
+/* Displays figcaptions to have 10px of margin on the bottom */
+figcaption {
+  margin-bottom: 10px;
+}
+
+/*
+  The element with the sources-links id will not have a list style.
+*/
+#sources-links {
+  list-style: none;
+}
+
+/*
+  This defines the colour #a02927 for the sources links.
+*/
+a {
+  color: #a02927;
+}
+
+/*
+  Displays the link to bold when it is hovered on, click, or tabbed.
+*/
+a:not(.nav-link):hover,
+a:not(.nav-link):focus {
+  font-weight: bold;
 }

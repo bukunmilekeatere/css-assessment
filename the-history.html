@@ -1,0 +1,227 @@
+<!--
+  Name: Oluwabukunmi Leke-Atere
+  Course: Software Development 20S
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 12/19/2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The History</title>
+    <!--This will link tthe external stylesheet.-->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!-- 
+      An Internal stylesheet for span, image and #cleared.
+    -->
+    <style>
+      /* Any img on this page will be floated left. */
+      img {
+        /*(float code from w3 schools)*/
+        float: left;
+        margin-right: 15px;
+      }
+
+      #cleared {
+        /*
+          When we don't want an element to float beside other floated elements,
+          we use the clear property. This property will break the floating of elements
+          and any element added to the website underneath this element will also not float
+          beside other elements of the page.
+          NOTE: Whatever value you use for float is the value you should use for clear 
+                (i.e., in this case it is left). -(comment and code from mr. Hardman)
+        */
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      The header of the webpage will contain the link to this webpage.
+      One more link will be added for the third assessment.
+    -->
+    <header>
+      <!-- 
+        The links will be displayed consistently throughout the website
+        because a class (nav-link) has been incorporated into the external stylesheet.
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="the-history.html" class="nav-link">The History</a></li>
+        </ul>
+      </nav>
+      <h1>The History</h1>
+    </header>
+
+    <main>
+      <!--
+        Created section for area of related content. The p tags hold the related content.
+      -->
+      <section>
+        <p>
+          Treaty No. 1 was signed with the understanding that it would last "as
+          long as the sun shines, the grass grows, and the river flows."
+        </p>
+        <p>
+          Indigenous peoples have lived on Canada for thousands of years, with
+          their own unique cultures, identities, traditions, languages and
+          institutions.
+        </p>
+      </section>
+
+      <!--
+        This will display the Treaty 1 Flag image and the caption that goes with it.
+      -->
+      <!-- (style code from w3 schools)-->
+      <figure>
+        <figcaption>The Treaty 1 Flag.</figcaption>
+        <img
+          src="images/treaty-1-flag.gif"
+          alt="An image that illustrates Treaty 1 map flag. 
+            This said flag is divided horizontally into green and blue. 
+            There is a yellow sun in the middle with seven triangles around to 
+            represent the seven nations. There's also a red line that goes around the sun." />
+      </figure>
+
+      <br />
+
+      <h2>Communities and Nations Involved</h2>
+      <p>
+        Winnipeg, Portage la Prairie, Selkirk, Steinbach, Emerson, and Winkler
+        are communties on Treaty 1.
+        <!--
+          A link to the information source will be displayed.
+        -->
+        <a
+          href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html"
+          target="_blank">
+          - Winnipeg CTV News
+        </a>
+      </p>
+
+      <p>
+        The <span>seven First Nations</span> that are represented by Treaty One
+        Nation are: Peguis First Nation, Sagkeeng First Nation, Brokenhead
+        Ojibway Nation, Roseau River Anishinaabe First Nation, Long Plain First
+        Nation, Sandy Bay Ojibway First Nation and Swan Lake First Nation.
+        <!--
+          A link to the information source will be displayed.
+        -->
+        <a
+          href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html"
+          target="_blank">
+          - Government of Canada
+        </a>
+      </p>
+
+      <!--
+        Inline styling for the section. The section will have a margin of 5% on the top.
+      -->
+      <section style="margin-top: 5%">
+        <p>
+          <!-- Spans are added to emphasize and style important words.-->
+          The community needed a treaty <span>(Treaty 1)</span> because the
+          Canadian government was trying to acquire legal control over
+          territories that were being held at the time by different Native
+          communities living in Manitoba.
+        </p>
+        <p>
+          Treaty 1 was also used as a supposed act of good will and peace
+          between Natives at the Canadian government.
+        </p>
+      </section>
+
+      <!--
+        This will display an illustrated image of Treaty 1 getting negotiated.
+        The necessary caption for the caption will be displayed as well.
+        The image will be displayed with specific height of 550px.
+      -->
+      <figure>
+        <figcaption>Illustration of Treaty 1 being negotiated.</figcaption>
+        <img
+          src="images/treaty-1.jpeg"
+          height="550px"
+          alt="An image that illustrates Treaty 1 being negotitiated. 
+            This image is in black and white. One man is in the middle
+            while the others stand around him, listening to what he's saying." />
+      </figure>
+
+      <h2>Historic Terms</h2>
+      <p>
+        Lands set aside for settlers and Indigenous peoples were designated
+        through treaties; <span>160 acres of land</span> for each family of five
+        or in like proportions for a smaller or larger family. Promises were
+        made to build schools for every community, to pay each "Indian" a meagre
+        annuity of <span>$3 to $5</span>, and to provide some chosen Chiefs,
+        headmen, and council members with commodities like twine, ploughs,
+        boars, and oxen.
+      </p>
+
+      <h2>The Reality</h2>
+      <p>
+        If you were to read only the federal government's treaty documents, you
+        might get the impression that First Nations were only allowed to
+        continue existing on the lands set aside for them because of the
+        kindness and goodwill of the British Crown and settlers and that Native
+        Americans were to be feared and needed to be subdued. The then-Chiefs,
+        however, had a different meaning of the treaties when they signed the
+        papers, as you find out when you talk to Elders and other knowledge
+        keepers about that time.
+      </p>
+    </main>
+    <!--
+      The foooter will hold the links to source info and copyright.
+      Internal styling that will display 5% of margin on the top for the div.
+    -->
+    <footer>
+      <div style="margin-top: 5%">
+        <h2>Sources</h2>
+        <ul id="sources-links">
+          <li>
+            <a
+              href="https://www.rcaanc-cirnac.gc.ca/eng/1360948213124/1544620003549"
+              target="blank"
+              >Government of Canada Numbered Treaties
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.winnipegvitalsigns.org/vital-information/treaty-1/"
+              target="blank"
+              >Winnipeg Vital Signs Treaty 1
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://www.mhs.mb.ca/docs/sites/lowerfortgarry.shtml"
+              target="blank"
+              >Manitoba Historical Society
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.crwflags.com/fotw/flags/ca_trty1.html"
+              target="_blank"
+              >CRW flags
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/#:~:text=The%20treaties%20laid%20out%20where,elected%20Chiefs%2C%20headmen%20and%20councillors."
+              target="_blank"
+              >Canadian Geographic
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <p>
+        <small>&#169; Oluwabukunmi Leke-Atere</small>
+      </p>
+    </footer>
+  </body>
+</html>
