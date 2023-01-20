@@ -46,6 +46,7 @@ html {
   default serif font.
 */
 body {
+  margin: 0;
   background-color: #fffefe;
   color: #575658;
 
@@ -53,30 +54,50 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* Nav bar of color #8a440f */
+/* Nav bar of color #8a440f, with width of 100% and padding of 10px. */
 nav {
   background-color: #8a440f;
+  width: 100%;
+  padding: 10px;
 }
 
 /* 
-  The nav li will have inline-block, with a margin of 10px and font size of 20px
+  The nav li display inline-block, with a margin of 10px and font size of 22px
 */
 nav li {
   display: inline-block;
   margin: 10px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /*
-  The navigation link will display with a margin of 4px, padding of 5px, background colour 
-  of #f5f5f5 and text colour of #252422
+  The navigation link will display with a margin of 10px, padding of 20px,
+  no text decoration, background colour of #f5f5f5, and text colour of #252422.
 */
 .nav-link {
-  margin: 4px;
-  padding: 5px;
+  margin: 10px;
+  padding: 20px;
 
+  text-decoration: none;
   background-color: #f5f5f5;
   color: #252422;
+
+  /*
+    A transition will occur when a user interacts with the nav links.
+
+    It creates a transition for background color between #f5f5f5 and #252422
+    that lasts 0.3 seconds. It slowly enters and exits the transition (because of ease-in-out).
+    
+    It also creates a transition for color between #252422 and #f5f5f5
+    and that lasts 0.3 seconds. It slowly enters and exits the transition (because of ease-in-out).
+
+    Inspiration for code and comment from Mr. Hardman
+  */
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -moz-transitions: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /*
@@ -86,6 +107,30 @@ nav a:hover,
 nav a:focus {
   background-color: #252422;
   color: #f5f5f5;
+
+  /* 
+    An effect is achieved when the user interacts with the nav by adding a box shadow,
+    and then moving the element on the x axis using the transform and translate properties
+    so that it appears to grow out of the screen (gives the nav link more of a button appearance)
+
+    Code and comment from webdesignerdepot.com
+  */
+  -webkit-box-shadow: 1px 1px #fffefe, 2px 2px #fffefe, 3px 3px #fffefe;
+  -moz-box-shadow: 1px 1px #fffefe, 2px 2px #fffefe, 3px 3px #fffefe;
+  box-shadow: 1px 1px #fffefe, 2px 2px #fffefe, 3px 3px #fffefe;
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  -ms-transform: translateX(-3px);
+  -o-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+/*
+  The top and bottom of the main wil have margin of 1em.
+  The right and left of the main will have margin of 2.5%. 
+*/
+main {
+  margin: 1em 2.5%;
 }
 
 /*
@@ -98,18 +143,29 @@ h1 {
 
 /*
   This styles all sections elements on the web page to have a background color
-  of #f5f5f5, sets the section to use the automatic width of the
-  div, and sets the height to 160px. Adds 10px of padding to the
-  top and bottom of the section, as well as 20px of padding on the left
+  of #f5f5f5, sets the section to use the automatic width. Adds 10px of padding
+  to the top and bottom of the section, as well as 20px of padding on the left
   and right. Finally, aligns the text center.
 */
 section {
   background-color: #f5f5f5;
   width: auto;
-  height: 160px;
 
   padding: 10px 20px;
   text-align: center;
+}
+
+/*
+  This will display an outline around specific images with the class name
+  of treaty1-img-outline. The border will be 5px with a solid colour of #8a440f
+*/
+.treaty1-img-outline {
+  outline: 5px solid #8a440f;
+}
+
+/* The figcaptions will display with a font size of 20px */
+figcaption {
+  font-size: 20px;
 }
 
 /*
@@ -123,16 +179,16 @@ span {
 
 /*
   This styles all div elements on the web page to have a background color
-  of #f5f5f5, sets the div to use the automatic width of the
-  div, and sets the height to 200px. Adds 10px of padding to the
-  top and bottom of the div, as well as 20px of padding on the left
-  and right. Finally, aligns the text center.
+  of #f5f5f5, sets the div to use the automatic width. Adds 10px of padding
+  to the top and bottom of the div, as well as 20px of padding on the left
+  and right. Finally, aligns the text center. Internal styling that will display
+  5% of margin on the top for the div.
 */
 div {
   background-color: #f5f5f5;
   width: auto;
-  height: 200px;
 
+  margin-top: 5%;
   padding: 10px 20px;
   text-align: center;
 }
@@ -144,28 +200,28 @@ p {
 }
 
 /*
-  h2 headings will be displayed with a font size of 25px and color #656466.
+  h2 headings will be displayed with a font size of 25px and color #575658.
 */
 h2 {
   font-size: 25px;
   color: #575658;
 }
 
-/* Figure images will display with a width of 50% */
-figure img {
-  width: 50%;
-}
-
-/* Displays figcaptions to have 10px of margin on the bottom */
-figcaption {
-  margin-bottom: 10px;
+/*
+  The top and bottom of the footer wil have margin of 1em.
+  The right and left of the footer will have margin of 2.5%. 
+*/
+footer {
+  margin: 1em 2.5%;
 }
 
 /*
   The element with the sources-links id will not have a list style.
+  Also, the elements with the sources-links id will have font size of 22px.
 */
 #sources-links {
   list-style: none;
+  font-size: 22px;
 }
 
 /*

@@ -1,0 +1,356 @@
+<!--
+  Name: Oluwabukunmi Leke-Atere
+  Course: Software Development 20S
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 1/19/2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty 1 Today</title>
+    <!--This will link the external stylesheet.-->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!-- 
+      An Internal stylesheet for figure, figure img, figcaption,
+      section, and iframe.
+    -->
+    <style>
+      /* 
+        Figures on this page will be inline-block, they will be positioned relative
+        to normal position and it will take up 50% of space for width. With the left
+        at 50% and the transform set to translateX(-50%), the figure will be displayed 
+        at the exact center. There is no margin added.
+      */
+      figure {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        margin: 0;
+      }
+      /* Figure images will display with a width of 100% */
+      figure img {
+        width: 100%;
+      }
+
+      /* 
+        Figcaptions on this page will display as inline-block, and will have
+        width of 100%. Margin of 10px will be added to the bottom of the fig
+        caption and the caption will appear at the center.
+      */
+      figcaption {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      /* 
+        The top and bottom of sections on this page wil have margin of 1em.
+        The right and left of sections on this page will have margin of 2.5%.
+        The text in the sections on this page will be aligned to the left.
+      */
+      section {
+        margin: 1em 2.5%;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      The header of the webpage will contain the link to this webpage.
+      One more link will be added for the third assessment.
+    -->
+    <header>
+      <!-- 
+        These links will be displayed consistently throughout the website
+        because a class (nav-link) has been incorporated into the external stylesheet.
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="the-history.html" class="nav-link">The History</a></li>
+          <li>
+            <a href="treaty-1-today.html" class="nav-link">Treaty 1 Today</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Treaty 1 Today</h1>
+    </header>
+    <main>
+      <!--
+        This will display the Treaty 1 Medal image and the caption that goes with it.
+        The atrributes of the class treaty1-img-outline will be added to the image. 
+      -->
+      <figure>
+        <img
+          class="treaty1-img-outline"
+          src="images/treaty-1-medal.jpg"
+          alt="An image that displays Treaty 1 medal. 
+            This said medal is silver and it says INDIAN TREATY No. 1. 
+            The year the medal was given, 1873 is also engraved at the bottom of the medal.
+            The medal illustrates the chief and the representative of the crown agreeing on Treaty 1." />
+        <figcaption>The Treaty 1 Medal.</figcaption>
+      </figure>
+
+      <br />
+      <!--
+        Created section for area of related content. The different texts in this case are related.
+      -->
+      <section>
+        <h2>The Difference of Treaty 1</h2>
+        <p>
+          Treaty 1 is the first post-Confederation treaty and covered Manitoba
+          as it existed then.
+          <!--
+            A link to the information source will be displayed.
+          -->
+          <a
+            href="https://publications.gc.ca/collections/collection_2011/ainc-inac/R3-145-2011-eng.pdf"
+            target="_blank">
+            - Click this link to go to the publications.gc.ca website.
+          </a>
+        </p>
+
+        <p>
+          <!-- Spans are added to emphasize and style important words.-->
+          Treaty 1 is different from the other treaties because the First Nation
+          included in Treaty 1 have their own languages, culture, social
+          structure, legal system and political system. The
+          <span>clear diversity</span> among the peoples of the treaties is one
+          main reason Treaty 1 is different from Treaty 2 to 11.
+        </p>
+
+        <p>
+          <!-- Spans are added to emphasize and style important words.-->
+          Another difference between the treaties is the area ceded.
+          <span>
+            Sixteen thousand, seven hundred square miles
+            <!--
+              The <sup> tag defines superscript text.
+              Superscript text appears half a character above the normal line - comment from w3 schools.
+            -->
+            (43,252.8km<sup>2</sup>)
+          </span>
+          of land in south-central Manitoba was transferred to the Crown in
+          Treaty 1.
+        </p>
+
+        <p>
+          <!-- Spans are added to emphasize and style important words.-->
+          The signing gifts are another thing that differentiates Treaty 1 from
+          the other treaties. As a result of good conduct of the Indegenous
+          peoples, the Crown gave a present of <span>three dollars</span> for
+          each man, woman, and child belonging to the bands represented in
+          Treaty 1.
+        </p>
+      </section>
+
+      <!--
+        Link for embedded Youtube video will be displayed.
+        Due to the inline styling, the link will have font
+        size of 20px and will be centered and displayed as 
+        as a block. 
+      -->
+      <a
+        href="https://www.youtube.com/embed/cwM08UJRQR0"
+        style="font-size: 20px; text-align: center; display: block"
+        target="_blank">
+        Click this link to view the embedded Youtube video featured below about
+        Naawi-Oodena: the largest urban reserve in Manitoba
+      </a>
+
+      <!--
+        The iframe will display a youtube video that will be inline-block,
+        positioned relative to normal position, and will take up 50% of space
+        for width. With the left at 50% and the transform set to translateX(-50%),
+        the youtube video will be displayed at the exact center. There is no margin added.
+        The youtube video will have a height of 400.
+      -->
+      <iframe
+        style="
+          display: inline-block;
+          position: relative;
+          width: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+          margin: 0;
+        "
+        height="400"
+        src="https://www.youtube.com/embed/cwM08UJRQR0"
+        title="This is an IFrame that displays the YouTube video that explains what an iFrame is and how to use them."
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
+      <!--
+        Created section for area of related content. The different texts in this case are related.
+      -->
+      <section>
+        <h2>Implementation of Treaty 1 Today</h2>
+        <p>
+          <!-- Spans are added to emphasize and style important words.-->
+          <span>Naawi-Oodena</span> officially converted to joint reserve lands
+          to become the largest Urban Reserve in Manitoba.
+        </p>
+        <p>
+          To conclude negotiations spanning the course of two decades, lands of
+          the former Kapyong Barracks in Winnipeg, MB, were officially converted
+          to reserve and repatriated to the Joint Reserve land base of the seven
+          Treaty One First Nations on December 16, 2022.
+          <!--
+            A link to the information source will be displayed.
+          -->
+          <a
+            href="https://treaty1.ca/t1-joint-reserve-creation-2022/"
+            target="_blank">
+            - Click this link to go to the Treaty1.ca website.
+          </a>
+        </p>
+        <p>
+          <!-- Spans are added to emphasize and style important words.-->
+          Naawi-Oodena means “<span>Centre of the Heart and Community</span>” in
+          the Anishinaabemowin language. Its development will result in the
+          mutual benefits of jobs, income, and profits not only for citizens and
+          businesses of Turtle Island’s First Nations, but those of Winnipeg and
+          surrounding areas. Revenues will flow to respective coffers that
+          contribute to both the City of Winnipeg and First Nation governments
+          as services, infrastructure, and programs are developed on
+          Naawi-Oodena.
+          <!--
+            A link to the information source will be displayed.
+          -->
+          <a
+            href="https://treaty1.ca/t1-joint-reserve-creation-2022/"
+            target="_blank">
+            - Click this link to go to the Treaty1.ca website.
+          </a>
+        </p>
+      </section>
+
+      <!--
+        This will display the image of Knowledge keepers and delegates and the caption
+        that goes with it. The atrributes of the class treaty1-img-outline will be added
+        to the image. 
+      -->
+      <figure>
+        <img
+          class="treaty1-img-outline"
+          src="images/knowledge-keepers-and-delegates.jpg"
+          alt="An image that displays ten different Knowledge Keepers
+            and Delegates together for the ceremony and feast of 151
+            years since Treaty 1 was signed. They all stand for the picture
+            in front of a white tipi." />
+        <figcaption>
+          Knowledge Keepers and Delegates Join Together in Ceremony and Feast.
+        </figcaption>
+      </figure>
+
+      <!--
+        Created section for area of related content. The different texts in this case are related.
+      -->
+      <section>
+        <h2>Implementation of Treaty 1 Today</h2>
+        <p>
+          <!-- Spans are added to emphasize and style important words.-->
+          Treaty One Nation commemorates <span>151 years</span> since signing of
+          Treaty No. 1
+        </p>
+        <p>
+          <!-- Spans are added to emphasize and style important words.-->
+          <span>
+            August 3, 2022 , Treaty One Territory, St. Andrews, Manitoba
+          </span>
+          – Today, Treaty One Nation Chiefs and representatives from the Federal
+          Government, the Assembly of Manitoba Chiefs, and the Southern Chiefs’
+          Organization gathered at Lower Fort Garry National Historic Site to
+          mark the 151st commemoration of the signing of Treaty No. 1. To
+          commemorate this important date in a special way, delegates celebrated
+          by sharing in a Pipe and Water Ceremony while a Sacred Fire remained
+          lit at Gabeshiwin, the site’s camp area.
+          <!--
+            A link to the information source will be displayed.
+          -->
+          <a
+            href="https://treaty1.ca/t1-joint-reserve-creation-2022/"
+            target="_blank">
+            - Click this link to go to the Treaty1.ca website.
+          </a>
+        </p>
+        <p>
+          Opening ceremonies were followed by remarks from the Treaty One Nation
+          Knowledge Keepers Council on the history of Treaty No. 1 and followed
+          by a feast. The Knowledge Keeper’s Council is composed of Elders from
+          each of the seven Treaty No. 1 First Nations who guide all Treaty One
+          Nation governing decisions. To honour our relationship today as a
+          result of the Treaty, Elders shared that it is a time for all pray for
+          ongoing reconciliation and offer prayers for good relations as were
+          intended from the signing 151 years ago.
+          <!--
+            A link to the information source will be displayed.
+          -->
+          <a
+            href="https://treaty1.ca/t1-joint-reserve-creation-2022/"
+            target="_blank">
+            - Click this link to go to the Treaty1.ca website.
+          </a>
+        </p>
+        <p>
+          “151 years ago on this day, and after seven days of negotiations with
+          our Treaty Partners, a significant agreement was made that still
+          stands today. We welcomed settlement onto our lands and shared in the
+          abundance of our resources. The Treaty One Nations are still here,
+          just as we were 151 years ago. Our relationship is the foundation of
+          the Treaty, and this relationship continues to evolve into what it was
+          intended to be – Nation to Nation. Last week, Treaty One signed an
+          agreement with the City of Winnipeg that solidifies our commitments to
+          one another in sharing and benefitting from these lands. These new
+          agreements, 151 years later, are starting to reflect the spirit and
+          intent of Treaty One. It is my hope that we continue to set the
+          standard for what our future can look like for all of our Treaty
+          people. I would like to honour and acknowledge the significance of
+          this day that brought us all to where we stand today. Miigwetch.”
+          <!-- Spans are added to emphasize and style important words.-->
+          <span>- Chief Gordon Bluesky Chairperson, Treaty One Nation</span>
+        </p>
+      </section>
+    </main>
+    <!-- The foooter will hold the links to source info and copyright.-->
+    <footer>
+      <div>
+        <h2>Sources</h2>
+        <!-- The atrributes of the id sources-links will be added to the links. -->
+        <ul id="sources-links">
+          <li>
+            <a href="https://manitobamuseum.ca/archives/40901" target="blank">
+              Manitoba Museum
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://publications.gc.ca/site/archivee-archived.html?url=https://publications.gc.ca/collections/collection_2011/ainc-inac/R3-145-2011-eng.pdf"
+              target="blank">
+              Government of Canada
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://winnipeg.citynews.ca/2022/12/20/naawi-oodena-urban-reserve-manitoba/"
+              target="_blank">
+              City News Everywhere
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <p>&#169; Oluwabukunmi Leke-Atere</p>
+    </footer>
+  </body>
+</html>

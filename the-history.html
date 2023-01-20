@@ -12,13 +12,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The History</title>
-    <!--This will link tthe external stylesheet.-->
+    <!--This will link the external stylesheet.-->
     <link rel="stylesheet" href="stylesheets/main.css" />
     <!-- 
-      An Internal stylesheet for image and #cleared.
+      An Internal stylesheet for figure img, figure caption, image and #cleared.
     -->
     <style>
-      /* Any img on this page will be floated left. */
+      /* 
+        The top and bottom of figures on this page wil have margin of 1em.
+        The right and left of figures on this page will have no margin added.
+       */
+      figure {
+        margin: 1em 0;
+      }
+
+      /* Figure images will display with a width of 50% */
+      figure img {
+        width: 50%;
+      }
+
+      /* 
+        Reminder Mr. Hardman, you gave Bukunmi permission to leave this
+        and the same code on treaty-1-today as internal so as not to affect
+        index.html
+      */
+      /* Displays figcaptions to have 10px of margin on the bottom */
+      figcaption {
+        margin-bottom: 10px;
+      }
+
+      /* Any img on this page will be floated left and will have 15px of margin on the right */
       img {
         /*(float code from w3 schools)*/
         float: left;
@@ -50,6 +73,9 @@
         <ul>
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="the-history.html" class="nav-link">The History</a></li>
+          <li>
+            <a href="treaty-1-today.html" class="nav-link">Treaty 1 Today</a>
+          </li>
         </ul>
       </nav>
       <h1>The History</h1>
@@ -57,8 +83,7 @@
 
     <main>
       <!--
-        Created section for area of related content. The different sections of 
-        text in this case are related.
+        Created section for area of related content. The different texts in this case are related.
       -->
       <section>
         <p>
@@ -74,34 +99,28 @@
 
       <!--
         This will display the Treaty 1 Flag image and the caption that goes with it.
+        The atrributes of the class treaty1-img-outline will be added to the image. 
       -->
       <figure>
         <figcaption>The Treaty 1 Flag.</figcaption>
         <img
+          class="treaty1-img-outline"
           src="images/treaty-1-flag.gif"
           alt="An image that illustrates Treaty 1 map flag. 
             This said flag is divided horizontally into green and blue. 
             There is a yellow sun in the middle with seven triangles around to 
-            represent the seven nations. There's also a red line that goes around the sun." />
+            represent the seven nations. There's also a red line in the middle
+            of the flag that goes around the sun." />
       </figure>
-
-      <br />
 
       <h2>Communities and Nations Involved</h2>
       <p>
         Winnipeg, Portage la Prairie, Selkirk, Steinbach, Emerson, and Winkler
         are communties on Treaty 1.
-        <!--
-          A link to the information source will be displayed.
-        -->
-        <a
-          href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html"
-          target="_blank">
-          - Winnipeg CTV News
-        </a>
       </p>
 
       <p>
+        <!-- Spans are added to emphasize and style important words.-->
         The <span>seven First Nations</span> that are represented by Treaty One
         Nation are: Peguis First Nation, Sagkeeng First Nation, Brokenhead
         Ojibway Nation, Roseau River Anishinaabe First Nation, Long Plain First
@@ -112,11 +131,12 @@
         <a
           href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html"
           target="_blank">
-          - Government of Canada
+          - Click this link to go to the Canada.ca website.
         </a>
       </p>
 
       <!--
+        Created section for area of related content. The different texts in this case are related.
         Inline styling for the section. The section will have a margin of 5% on the top.
       -->
       <section style="margin-top: 5%">
@@ -135,21 +155,23 @@
 
       <!--
         This will display an illustrated image of Treaty 1 getting negotiated.
-        The necessary caption for the caption will be displayed as well.
-        The image will be displayed with specific height of 550px.
+        The necessary caption will be displayed as well.
+        The atrributes of the class treaty1-img-outline will be added to the image.
       -->
       <figure>
         <figcaption>Illustration of Treaty 1 being negotiated.</figcaption>
         <img
+          class="treaty1-img-outline"
           src="images/treaty-1.jpeg"
-          height="550px"
           alt="An image that illustrates Treaty 1 being negotitiated. 
-            This image is in black and white. One man is in the middle
-            while the others stand around him, listening to what he's saying." />
+            This image is in black and white. A person stands in the middle
+            pitching the idea of Treaty 1 to their fellow First Nation Peoples
+            while they sit around in a circle, listening to what is being said." />
       </figure>
 
       <h2>Historic Terms</h2>
       <p>
+        <!-- Spans are added to emphasize and style important words.-->
         Lands set aside for settlers and Indigenous peoples were designated
         through treaties; <span>160 acres of land</span> for each family of five
         or in like proportions for a smaller or larger family. Promises were
@@ -171,55 +193,51 @@
         keepers about that time.
       </p>
     </main>
-    <!--
-      The foooter will hold the links to source info and copyright.
-      Internal styling that will display 5% of margin on the top for the div.
-    -->
+    <!-- The foooter will hold the links to source info and copyright.-->
     <footer>
-      <div style="margin-top: 5%">
+      <div>
         <h2>Sources</h2>
+        <!-- The atrributes of the id sources-links will be added to the links. -->
         <ul id="sources-links">
           <li>
             <a
               href="https://www.rcaanc-cirnac.gc.ca/eng/1360948213124/1544620003549"
-              target="blank"
-              >Government of Canada Numbered Treaties
+              target="blank">
+              Government of Canada Numbered Treaties
             </a>
           </li>
           <li>
             <a
               href="https://www.winnipegvitalsigns.org/vital-information/treaty-1/"
-              target="blank"
-              >Winnipeg Vital Signs Treaty 1
+              target="blank">
+              Winnipeg Vital Signs Treaty 1
             </a>
           </li>
           <li>
             <a
               href="http://www.mhs.mb.ca/docs/sites/lowerfortgarry.shtml"
-              target="blank"
-              >Manitoba Historical Society
+              target="blank">
+              Manitoba Historical Society
             </a>
           </li>
           <li>
             <a
               href="https://www.crwflags.com/fotw/flags/ca_trty1.html"
-              target="_blank"
-              >CRW flags
+              target="_blank">
+              CRW flags
             </a>
           </li>
           <li>
             <a
               href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/#:~:text=The%20treaties%20laid%20out%20where,elected%20Chiefs%2C%20headmen%20and%20councillors."
-              target="_blank"
-              >Canadian Geographic
+              target="_blank">
+              Canadian Geographic
             </a>
           </li>
         </ul>
       </div>
       <br />
-      <p>
-        <small>&#169; Oluwabukunmi Leke-Atere</small>
-      </p>
+      <p>&#169; Oluwabukunmi Leke-Atere</p>
     </footer>
   </body>
 </html>

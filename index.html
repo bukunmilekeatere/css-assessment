@@ -12,19 +12,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty 1</title>
-    <!--This will link tthe external stylesheet.-->
+    <!--This will link the external stylesheet.-->
     <link rel="stylesheet" href="stylesheets/main.css" />
     <!-- 
-      An Internal stylesheet for div, span, and links to sources.
+      An Internal stylesheet for figure, figure img, and figcaption.
     -->
     <style>
-      /*
-        This will display a border around specific images with the class name of treaty-map.
-        The border will be 5px with a solid colour of #c96f29
-        */
-      .treaty-map {
-        border: 5px solid #8a440f;
-        margin-left: 50px;
+      /* 
+        Reminder Mr. Hardman, you gave Bukunmi permission to leave this
+        and the same code on the-history.html as internal so as not to affect
+        treaty-1-today.html
+      */
+      /* 
+        The top and bottom of the figure wil have margin of 1em.
+        The right and left of the figure will have no margin added.
+       */
+      figure {
+        margin: 1em 0;
+      }
+
+      /* 
+        Reminder Mr. Hardman, you gave Bukunmi permission to leave this
+        and the same code on treaty-1-today as internal so as not to affect
+        the-history.html
+      */
+      /* The figure img will display with a width of 100% */
+      figure img {
+        width: 100%;
+      }
+
+      /* Displays figcaptions to be centered. */
+      figcaption {
+        text-align: center;
       }
     </style>
   </head>
@@ -42,13 +61,15 @@
         <ul>
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="the-history.html" class="nav-link">The History</a></li>
+          <li>
+            <a href="treaty-1-today.html" class="nav-link">Treaty 1 Today</a>
+          </li>
         </ul>
       </nav>
+      <h1>Treaty 1</h1>
     </header>
 
     <main>
-      <h1>Treaty 1</h1>
-
       <!--Will act as a container for the written definitions of a treaty on the webpage.-->
       <section>
         <p>
@@ -61,27 +82,27 @@
         </p>
         <p>In other words, a treaty is an understanding between nations.</p>
       </section>
+
       <br />
 
-      <!-- 
-        The atrributes of the class treaty-map will be added to the iimage. 
-        The width takes up 90% space and has a height of 560px.
-      -->
-      <img
-        class="treaty-map"
-        src="images/lower-fort-garry.jpg"
-        width="90%"
-        height="560px"
-        alt=" A photo taken from the air of Lower Fort Garry.
-          The main area that contains the buildings is demarcated 
-          by a white fence. The buildings are white with red roofs, 
-          and a lot of trees are beside said buildings. The area is 
-          surrounded with green grass and a road.  " />
-
-      <!-- Inline styling for a paragraph that describes the image above.-->
-      <p style="font-size: 17px; text-align: center">
-        <b> Lower Fort Garry, Where Treaty 1 Would Have Been Signed. </b>
-      </p>
+      <figure>
+        <!-- 
+          The atrributes of the class treaty1-img-outline will be added to the image. 
+          The width of the figure img will take up 100% space because of the internal styling.
+        -->
+        <img
+          class="treaty1-img-outline"
+          src="images/lower-fort-garry.jpg"
+          alt=" Taken from the air, is a photo of Lower Fort Garry.
+            The main area that contains the buildings of Lower Fort Garry
+            is demarcated by a white fence. The buildings are white with red
+            roofs, and a lot of trees are beside said buildings. The area is 
+            surrounded with green grass and roads." />
+        <!-- caption/text that describes the image above.-->
+        <figcaption>
+          Lower Fort Garry, Where Treaty 1 Would Have Been Signed.
+        </figcaption>
+      </figure>
 
       <br />
 
@@ -94,30 +115,28 @@
         Treaty). More specifically, Treaty 1 was made between the First Nations
         and the Crown.
       </p>
+
       <br />
 
-      <!-- 
-        The atrributes of the class treaty-map will be added to the image. 
-        The width takes up 90% space and has a height of 550px.
-      -->
-      <img
-        class="treaty-map"
-        src="images/firstnations-treaty-map.jpg"
-        width="90%"
-        height="550px"
-        alt="Black and white image that uses black text. The picture is a map of Canada.
-          There is a legend on the bottom left corner that aids in understanding. The image shows 
-          Canada being divided into all the respective treaties. Years of the treaty agreements are also
-          displayed. On the top right corner there is a title for the image in black, bolded, and capitalized text
-          that says, CROWN-ABORIGINAL TREATIES IN CANADA 1763-2005. " />
-
-      <!-- Inline styling for a paragraph that describes the image above.-->
-      <p style="font-size: 17px; text-align: center">
-        <b>
+      <figure>
+        <!-- 
+          The atrributes of the class treaty-map will be added to the image. 
+          The width of the figure img will take up 100% space because of the internal styling. 
+        -->
+        <img
+          class="treaty1-img-outline"
+          src="images/firstnations-treaty-map.jpg"
+          alt="Black and white image that uses black text for labelling. The picture is a map of Canada.
+            There is a legend on the bottom left corner that aids in understanding. The image shows 
+            Canada being divided into all the respective treaties. Years of the treaty agreements are also
+            displayed. On the top right corner there is a title for the image in black, bolded, and capitalized text
+            that says, CROWN-ABORIGINAL TREATIES IN CANADA 1763-2005." />
+        <!-- caption/text that describes the image above.-->
+        <figcaption>
           Detailed Canadian Map That Illustrates the Treaties of Canada. Treaty
           1 Can Be Found in the South of Manitoba.
-        </b>
-      </p>
+        </figcaption>
+      </figure>
 
       <br />
 
@@ -132,10 +151,11 @@
         relatively similar but treaty 1 holds fewer clauses.
       </p>
     </main>
-    <!--The foooter will hold the links to where information was found and copyright.-->
+    <!--  The foooter will hold the links to source info and copyright.-->
     <footer>
       <div>
         <h2>Sources</h2>
+        <!-- The atrributes of the id sources-links will be added to the links. -->
         <ul id="sources-links">
           <li>
             <a
@@ -147,37 +167,35 @@
           <li>
             <a
               href="https://www.sac-isc.gc.ca/eng/1100100020576/1616073943706"
-              target="blank"
-              >Government of Canada First Nations and Treaty Areas in Manitoba
+              target="blank">
+              Government of Canada First Nations and Treaty Areas in Manitoba
             </a>
           </li>
           <li>
             <a
               href="The Numbered Treaties (1871-1921) (rcaanc-cirnac.gc.ca)"
-              target="blank"
-              >Government of Canada Numbered Treaties
+              target="blank">
+              Government of Canada Numbered Treaties
             </a>
           </li>
           <li>
             <a
               href="https://www.winnipegvitalsigns.org/vital-information/treaty-1/"
-              target="blank"
-              >Winnipeg Vital Signs Treaty 1
+              target="blank">
+              Winnipeg Vital Signs Treaty 1
             </a>
           </li>
           <li>
             <a
               href="http://www.mhs.mb.ca/docs/sites/lowerfortgarry.shtml"
-              target="blank"
-              >Manitoba Historical Society
+              target="blank">
+              Manitoba Historical Society
             </a>
           </li>
         </ul>
       </div>
       <br />
-      <p>
-        <small>&#169; Oluwabukunmi Leke-Atere</small>
-      </p>
+      <p>&#169; Oluwabukunmi Leke-Atere</p>
     </footer>
   </body>
 </html>
